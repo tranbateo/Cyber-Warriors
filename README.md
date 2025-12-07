@@ -1,7 +1,7 @@
 # ⚔️ Cyber-Warriors – Web3 Game on IOTA Move
 
-**Cyber-Warriors** là dApp (Web3 Game) triển khai trên **IOTA Rebased (Devnet)** sử dụng ngôn ngữ **Move**.  
-Người chơi có thể kết nối ví, triệu hồi Hero (NFT) và nâng cấp sức mạnh của chúng trực tiếp trên blockchain.
+**Cyber-Warriors** is a decentralized Web3 Game deployed on **IOTA Rebased (Devnet)** using the **Move** programming language.  
+Players can connect their wallet, summon Heroes (NFTs), and upgrade their strength directly on the blockchain.
 
 ---
 
@@ -11,7 +11,7 @@ Người chơi có thể kết nối ví, triệu hồi Hero (NFT) và nâng c�
 - Network: **IOTA Rebased (Devnet)**
 - Language: **Move**
 - Framework: **IOTA Framework**
-- Công cụ: **IOTA CLI**
+- Tools: **IOTA CLI**
 
 ### 🔹 Frontend (Client)
 - Library: **ReactJS (Vite)**
@@ -22,92 +22,103 @@ Người chơi có thể kết nối ví, triệu hồi Hero (NFT) và nâng c�
 
 ---
 
-## 🚀 Hướng dẫn cài đặt & chạy dự án
+## 🚀 Installation & Project Setup
 
 ### 1️⃣ Prerequisites
-Cài đặt:
+Install the following:
 - Node.js (v18+)
 - Rust & Cargo
-- IOTA CLI (bản Rebased-Move)
-- IOTA Wallet Extension (chuyển sang Devnet)
+- IOTA CLI (Rebased-Move version)
+- IOTA Wallet Extension (switch to Devnet)
 
 ---
 
-### 2️⃣ Clone dự án
+### 2️⃣ Clone Repository
 ```bash
-git clone https://github.com/USERNAME_CUA_BAN/iota-heroes-game.git
+git clone https://github.com/YOUR_USERNAME/iota-heroes-game.git
 cd iota-heroes-game
+3️⃣ Deploy Smart Contract (Backend)
 
----
+If you want to deploy your own contract:
 
-3. Deploy Smart Contract (Backend)
-Nếu bạn muốn tự deploy contract riêng của mình:
-
-Di chuyển vào thư mục move:
-
-Bash
+Move to the Move folder:
 
 cd move
-Chuyển CLI sang mạng Devnet và xin Token:
 
-Bash
+
+Switch CLI to Devnet and request gas:
 
 iota client switch --env devnet
-iota client faucet --url [https://faucet.devnet.iota.cafe/gas](https://faucet.devnet.iota.cafe/gas)
-Deploy lên mạng lưới:
+iota client faucet --url https://faucet.devnet.iota.cafe/gas
 
-Bash
+
+Deploy to the network:
 
 iota client publish --gas-budget 100000000
-LƯU Ý: Sau khi deploy thành công, hãy copy Package ID trong terminal (dòng Published Objects -> PackageID) để dùng cho bước sau.
 
-4. Chạy Frontend (Client)
-Di chuyển vào thư mục frontend:
 
-Bash
+📌 IMPORTANT: After successful deployment, copy your PackageID from the terminal
+(line showing Published Objects -> PackageID). You will need this for the frontend.
+
+4️⃣ Run Frontend (Client)
+
+Move to the frontend folder:
 
 cd ../frontend
-Cài đặt thư viện:
 
-Bash
+
+Install dependencies:
 
 npm install
-Cấu hình Contract ID: Mở file src/App.tsx, tìm dòng const PACKAGE_ID và thay bằng ID bạn vừa deploy (hoặc giữ nguyên nếu repo đã có sẵn ID hoạt động):
 
-TypeScript
+
+Configure Contract ID:
+Open file src/App.tsx, find:
 
 const PACKAGE_ID = "0x...YOUR_PACKAGE_ID...";
-Khởi chạy Web:
 
-Bash
+
+Replace with your deployed PackageID
+(or keep the existing one if the repo already includes a working ID).
+
+Run the web app:
 
 npm run dev
-Mở trình duyệt tại: http://localhost:5173
 
-🎮 Hướng dẫn chơi (How to Play)
-Để trải nghiệm game, bạn cần thực hiện đúng các bước sau trên trình duyệt:
 
-Bước 1: Chuẩn bị Ví (Quan trọng)
-Mở tiện ích IOTA Wallet trên trình duyệt.
+Open your browser at:
+http://localhost:5173
 
-Vào Cài đặt (Settings) -> Network -> Chọn IOTA Devnet.
+🎮 Gameplay Instructions (How to Play)
 
-Nếu ví hiện số dư là 0 IOTA, hãy bấm nút Faucet (hoặc "Request Tokens") ngay trong ví để nhận token test miễn phí.
+To interact with the game correctly, follow these steps:
 
-Bước 2: Kết nối & Triệu hồi
-Tại giao diện web game, bấm nút "Connect Wallet" ở góc phải -> Chọn IOTA Wallet.
+🧰 Step 1 — Wallet Preparation (Important)
 
-Nhập tên nhân vật bạn muốn (ví dụ: Cyber Dragon) vào ô trống.
+Open the IOTA Wallet Extension in your browser.
 
-Bấm nút "Triệu hồi Hero".
+Go to: Settings -> Network -> Select IOTA Devnet
 
-Một cửa sổ ví sẽ hiện lên yêu cầu xác nhận. Bấm Approve.
+If your balance is 0 IOTA, click Faucet (or “Request Tokens”) to receive free test tokens.
 
-Bước 3: Nâng cấp (Level Up)
-Sau khi triệu hồi thành công (đợi khoảng 2-3 giây), thẻ bài Hero sẽ xuất hiện bên dưới.
+⚔️ Step 2 — Connect & Summon a Hero
 
-Bấm nút "⚡ Level Up" trên thẻ bài.
+On the game UI, click “Connect Wallet” (top-right).
 
-Xác nhận giao dịch trên ví.
+Select IOTA Wallet.
 
-Chỉ số Level và Power của Hero sẽ tăng lên ngay lập tức.
+Enter any Hero name you want (e.g., Cyber Dragon).
+
+Click “Summon Hero”.
+
+The wallet popup will appear → click Approve.
+
+⚡ Step 3 — Upgrade (Level Up)
+
+After summoning (wait 2–3 seconds), your Hero card will appear.
+
+Click “⚡ Level Up”.
+
+Approve the transaction in your wallet.
+
+The Hero's Level and Power will increase immediately.
