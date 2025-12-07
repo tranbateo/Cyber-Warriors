@@ -32,6 +32,8 @@ Install the following:
 - IOTA Wallet Extension (switch to Devnet)
 
 ---
+### Contract address : https://explorer.iota.org/object/0xd220737f9cc29f07407dfc3f8b2961d0c21a94c6af88e5f9cfb0da23d8e87e7e?network=devnet
+---
 
 ### 2️⃣ Clone Repository
 ```bash
