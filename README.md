@@ -36,7 +36,9 @@ Dự án được chia thành 2 phần chính:
 ```bash
 git clone [https://github.com/USERNAME_CUA_BAN/iota-heroes-game.git](https://github.com/USERNAME_CUA_BAN/iota-heroes-game.git)
 cd iota-heroes-game
-###  3. Deploy Smart Contract (Nếu muốn tự chạy contract riêng)
+
+
+### 3. Deploy Smart Contract (Nếu muốn tự chạy contract riêng)
 Nếu bạn muốn sử dụng Contract có sẵn, bỏ qua bước này. Nếu muốn deploy mới:
 
       Di chuyển vào thư mục move:
@@ -47,6 +49,7 @@ Nếu bạn muốn sử dụng Contract có sẵn, bỏ qua bước này. Nếu 
           Deploy lên mạng lưới:
           iota client publish --gas-budget 100000000
 ###  QUAN TRỌNG: Sau khi deploy thành công, hãy copy Package ID từ terminal (dòng Published Objects -> PackageID).
+
 
 4. Chạy Frontend
 Di chuyển vào thư mục frontend:
