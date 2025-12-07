@@ -1,6 +1,6 @@
-# ⚔️ IOTA Heroes - Web3 Game on IOTA Move
+# ⚔️ Cyber-Warriors - Web3 Game on IOTA Move
 
-**IOTA Heroes** là một ứng dụng phi tập trung (dApp) đơn giản được xây dựng trên mạng lưới **IOTA Rebased (Devnet)** sử dụng ngôn ngữ lập trình **Move**. Người chơi có thể kết nối ví, triệu hồi Hero (NFT) và nâng cấp sức mạnh của chúng trực tiếp trên Blockchain.
+**Cyber-Warriors** là một ứng dụng phi tập trung (dApp) đơn giản được xây dựng trên mạng lưới **IOTA Rebased (Devnet)** sử dụng ngôn ngữ lập trình **Move**. Người chơi có thể kết nối ví, triệu hồi Hero (NFT) và nâng cấp sức mạnh của chúng trực tiếp trên Blockchain.
 
 
 
