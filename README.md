@@ -2,8 +2,7 @@
 
 **IOTA Heroes** là một ứng dụng phi tập trung (dApp) đơn giản được xây dựng trên mạng lưới **IOTA Rebased (Devnet)** sử dụng ngôn ngữ lập trình **Move**. Người chơi có thể kết nối ví, triệu hồi Hero (NFT) và nâng cấp sức mạnh của chúng trực tiếp trên Blockchain.
 
-![Project Banner](https://via.placeholder.com/1000x300?text=IOTA+Heroes+Game+Banner) 
-*(Bạn có thể thay link trên bằng ảnh chụp màn hình game của bạn)*
+
 
 ## 🛠️ Thông số kỹ thuật (Tech Stack)
 
